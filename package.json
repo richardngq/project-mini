@@ -1,34 +1,38 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "project-mini",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest"
-  },
   "dependencies": {
-    "@vanilla-extract/babel-plugin": "^1.1.5",
-    "@vanilla-extract/css": "^1.7.0",
-    "@vanilla-extract/vite-plugin": "^3.1.4",
-    "clsx": "^1.1.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@testing-library/dom": "^8.13.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/react-hooks": "^8.0.0",
-    "@testing-library/user-event": "^14.1.1",
-    "@types/react": "^18.0.6",
-    "@types/react-dom": "^18.0.2",
-    "@vitejs/plugin-react": "^1.3.1",
-    "jsdom": "^19.0.0",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.5",
-    "vite-plugin-babel": "^1.0.0",
-    "vitest": "^0.9.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
