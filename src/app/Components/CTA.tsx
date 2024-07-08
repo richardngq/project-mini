@@ -34,7 +34,7 @@ export const CTA: FC = () => {
       <div className="flex lg:flex-row items-center border border-[#fdfcfc] rounded-3xl">
         {
           carousel.map((o, i) => (
-            <div className={`grid-1 overflow-hidden w-full ${i === 1 && 'border-l border-r border-[#4A5358]'}`} key={i}>
+            <div className={`grid-1 relative flex items-center justify-center overflow-hidden w-full ${i === 1 && 'border-l border-r border-[#4A5358]'}`} key={i}>
               <div className={`embla`} ref={emblaRef}>
                 <div className={`embla__container`}>
                   {
@@ -44,6 +44,7 @@ export const CTA: FC = () => {
                   }
                 </div>
               </div>
+              <hr className="absolute w-full border-[1.5px] border-theme " />
             </div>
           ))
         }
