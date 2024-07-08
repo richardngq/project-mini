@@ -5,7 +5,6 @@ import Img01 from '@/assets/img/img-logo-01.png';
 import Img02 from '@/assets/img/img-logo-02.png';
 import Img03 from '@/assets/img/img-logo-03.png';
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
 import Link from "next/link";
 
 const carousel = [
@@ -27,7 +26,7 @@ export const CTA: FC = () => {
     if (emblaApi) {
       emblaApi.scrollNext();
     }
-  }, []);
+  });
 
 
   return (
